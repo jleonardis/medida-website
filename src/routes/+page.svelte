@@ -1,6 +1,6 @@
 <script>
     import { onMount } from 'svelte';
-    import { _ } from 'svelte-i18n';
+    import { _, locale } from 'svelte-i18n';
     import { scheduleLink } from '$lib/links';
 
     onMount(() => {
@@ -54,7 +54,7 @@
   <!-- Demo video -->
    <section class="py-16 my-16">
     <video id="demo-video" class="w-1/2 mx-auto" controls muted>
-      <source src="/videos/demo-video-english.mp4" type="video/mp4">
+      <source src={`/videos/demo-video-${$locale === 'en' ? 'english' : 'spanish'}.mp4`} type="video/mp4">
       Your browser does not support the video tag.
     </video>
    </section>
