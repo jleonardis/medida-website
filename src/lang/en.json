@@ -27,5 +27,16 @@
     "comprehensive_training_title": "Comprehensive training",
     "comprehensive_training_subtitle": "You'll receive hands-on training right off the bat for you and for every level of your team, ensuring everyone feels comfortable and confident using Medida on a daily basis.",
     "long_term_support_title": "Long-term support",
-    "long_term_support_subtitle": "We know that this is going to be a marathon and not a sprint which is why we offer long-term support to guide your staff as they implement the skills they’ve learned in our training program. We also offer periodic refresher trainings and deep-dive trainings as you progress in your data journey."
+    "long_term_support_subtitle": "We know that this is going to be a marathon and not a sprint which is why we offer long-term support to guide your staff as they implement the skills they’ve learned in our training program. We also offer periodic refresher trainings and deep-dive trainings as you progress in your data journey.",
+    "hero_section_title": "Every organization should be able to manage its data and measure its impact.",
+    "services_section_title": "We’ll help you get there. How?",
+    "me_consulting_title": "M&E consulting",
+    "me_consulting_description": "to design a plan to evaluate and enhance the performance of your programs.",
+    "database_platform_title": "A database platform",
+    "database_platform_description": "to organize your program data, measure your impact, and report results effectively.",
+    "section_title": "We’re with you every step of the way",
+    "platform_description": "Our <a href=\"/platform\" class=\"font-semibold text-primary-blue\">platform</a> makes data collection, organization, and analysis effortless, ensuring consistency and accuracy across your operations. And to ensure you're utilizing our platform to its fullest potential, we provide thorough <a href=\"/training\" class=\"font-semibold text-primary-blue\">training</a> that's tailored to fit every role within your organization.",
+    "consultation_description": "Want to improve your organization’s impact measurement but not ready to commit to a new platform? Check out our <a href=\"#\" class=\"font-semibold text-primary-blue hover:underline\">monitoring and evaluation consultation</a> program.",
+    "cta_title": "Know you need to take control of your data but not ready for our tool?",
+    "cta_button_text": "We're happy to help anyway"
 }

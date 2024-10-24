@@ -5,8 +5,10 @@
 	import { faFacebook, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 	import { FontAwesomeIcon } from '@fortawesome/svelte-fontawesome';
 	// src/lib/i18n/index.ts
-	import { browser } from '$app/environment'
-	import { init, register, locale } from 'svelte-i18n'
+	import { browser } from '$app/environment';
+	import { init, register, locale } from 'svelte-i18n';
+	import { scheduleLink } from '$lib/links';
+
 
 	const defaultLocale = 'en'
 
@@ -21,6 +23,9 @@
 	locale.set(defaultLocale);
 	
 	let { children } = $props();
+
+	const contactEmail = 'contact@medida.io';
+	const whatsappNumber = '1234567890';
 </script>
 
 <!-- Navbar -->
@@ -47,7 +52,7 @@
 				</a>
 			</li>
 			</ul>
-			<a href="#" class="px-6 py-2 bg-primary-blue text-white rounded-lg hover:bg-primary-orange">Book a free consultation</a>
+			<a href="{scheduleLink}" class="px-6 py-2 bg-primary-blue text-white rounded-lg hover:bg-primary-orange">Book a free consultation</a>
 		</div>
 	</div>
   </nav>

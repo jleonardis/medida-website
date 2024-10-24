@@ -58,23 +58,23 @@
     
         <!-- Right Side: Text Box (Overlapping the Image) -->
         <div class="absolute top-1/4 right-[25%] bg-gray-100 p-8 md:p-12 shadow-lg max-w-md">
-            <h2 class="text-3xl font-bold text-primary-blue mb-4">We believe</h2>
+            <h2 class="text-3xl font-bold text-primary-blue mb-4">{$_('we_believe_title')}</h2>
             <ul class="text-lg text-gray-600 space-y-2">
                 <li class="flex items-start space-x-2">
-                    <span class="text-orange-500">•</span>
-                    <span>Every organization should be able to take control of their data with confidence.</span>
+                    <span class="text-primary-orange">•</span>
+                    <span>{$_('we_believe_1')}</span>
                 </li>
                 <li class="flex items-start space-x-2">
-                    <span class="text-orange-500">•</span>
-                    <span>Good data management shouldn’t take time, it should save time.</span>
+                    <span class="text-primary-orange">•</span>
+                    <span>{$_('we_believe_2')}</span>
                 </li>
                 <li class="flex items-start space-x-2">
-                    <span class="text-orange-500">•</span>
-                    <span>Your organization is at its best when your staff are focused on how to improve your programs and increase their impact.</span>
+                    <span class="text-primary-orange">•</span>
+                    <span>{$_('we_believe_3')}</span>
                 </li>
                 <li class="flex items-start space-x-2">
-                    <span class="text-orange-500">•</span>
-                    <span>You should be able to demonstrate that impact to donors and stakeholders with real-time, one-click reports.</span>
+                    <span class="text-primary-orange">•</span>
+                    <span>{$_('we_believe_4')}</span>
                 </li>
             </ul>
         </div>

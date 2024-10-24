@@ -1,0 +1,1 @@
+export const scheduleLink = 'https://calendly.com/medida/llamada-exploratoria';
