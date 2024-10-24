@@ -8,7 +8,7 @@
         
         <div class="basis-1/2"> <!-- Max width added -->
             <h1 class="text-4xl leading-normal tracking-normal text-primary-orange font-bold">
-                At Medida, we believe in a world where organizations of any size can work with their data to better serve their communities
+                {$_('vision_title')}
             </h1>
         </div>
         
