@@ -7,7 +7,7 @@
   <div class="flex flex-col items-center p-8">
     <h1 class="text-4xl font-bold text-primary-blue text-center mb-8">{$_('platform_title')}</h1>
     <p class="text-xl text-gray-600 text-center mb-8">{$_('platform_subtitle')}</p>
-    <div>
+    <div class="w-1/2">
         <img src="/images/platform-full.png" alt="Platform Image" class="w-full h-auto object-cover">
     </div>
     <!-- Section 1: Data Collection -->
