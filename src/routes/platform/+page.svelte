@@ -5,11 +5,13 @@
   </script>
   
   <div class="flex flex-col items-center p-8">
-    <h1 class="text-4xl font-bold text-primary-blue text-center mb-8">{$_('platform_title')}</h1>
-    <p class="text-xl text-gray-600 text-center mb-8">{$_('platform_subtitle')}</p>
-    <div class="w-1/2">
-        <img src="/images/platform-full.png" alt="Platform Image" class="w-full h-auto object-cover">
-    </div>
+    <section class="w-full">
+        <h1 class="text-4xl font-bold text-primary-blue text-center mb-8">{$_('platform_title')}</h1>
+        <p class="text-xl text-gray-600 text-center mb-8">{$_('platform_subtitle')}</p>
+        <div class="w-full">
+            <img src="/images/platform-full.png" alt="Platform Image" class="w-1/2 mx-auto h-auto object-cover">
+        </div>
+    </section>
     <!-- Section 1: Data Collection -->
     <section class="px-16 py-8 w-full max-w-7xl flex flex-col md:flex-row items-center justify-between">
       <div class="md:w-1/2 p-6">
