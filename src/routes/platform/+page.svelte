@@ -5,7 +5,7 @@
   </script>
   
   <div class="flex flex-col items-center p-8">
-    <section class="w-full">
+    <section class="w-full h-screen">
         <h1 class="text-4xl font-bold text-primary-blue text-center mb-8">{$_('platform_title')}</h1>
         <p class="text-xl text-gray-600 text-center mb-8">{$_('platform_subtitle')}</p>
         <div class="w-full">
