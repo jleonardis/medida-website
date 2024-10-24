@@ -10,7 +10,7 @@
     <!-- Section 1: Comprehensive training -->
     <section class="px-16 py-8 w-full max-w-7xl flex flex-col md:flex-row items-center justify-between">
       <div class="md:w-1/2 p-6">
-        <h2 class="text-3xl font-bold text-teal-600 mb-4">{$_('comprehensive_training_title')}</h2>
+        <h2 class="text-3xl font-bold text-primary-blue mb-4">{$_('comprehensive_training_title')}</h2>
         <p class="text-xl text-gray-600 mb-10">{$_('comprehensive_training_subtitle')}</p>
       </div>
       <div class="md:w-1/2 p-6">
@@ -24,7 +24,7 @@
         <img src="/images/long-term-support.jpg" alt="Data Management" class="w-full h-auto object-cover">
       </div>
       <div class="md:w-1/2 p-6">
-        <h2 class="text-3xl font-bold text-teal-600 mb-4">{$_('long_term_support_title')}</h2>
+        <h2 class="text-3xl font-bold text-primary-blue mb-4">{$_('long_term_support_title')}</h2>
         <p class="text-xl text-gray-600 mb-10">{$_('long_term_support_subtitle')}</p>
         <!-- <ul class="text-lg text-gray-600 space-y-2">
             <li class="flex items

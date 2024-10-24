@@ -58,7 +58,7 @@
     
         <!-- Right Side: Text Box (Overlapping the Image) -->
         <div class="absolute top-1/4 right-[25%] bg-gray-100 p-8 md:p-12 shadow-lg max-w-md">
-            <h2 class="text-3xl font-bold text-teal-600 mb-4">We believe</h2>
+            <h2 class="text-3xl font-bold text-primary-blue mb-4">We believe</h2>
             <ul class="text-lg text-gray-600 space-y-2">
                 <li class="flex items-start space-x-2">
                     <span class="text-orange-500">•</span>

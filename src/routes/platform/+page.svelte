@@ -15,7 +15,7 @@
     <!-- Section 1: Data Collection -->
     <section class="px-16 py-8 w-full max-w-7xl flex flex-col md:flex-row items-center justify-between">
       <div class="md:w-1/2 p-6">
-        <h2 class="text-3xl font-bold text-teal-600 mb-4">{$_('data_collection_title')}</h2>
+        <h2 class="text-3xl font-bold text-primary-blue mb-4">{$_('data_collection_title')}</h2>
         <p class="text-xl text-gray-600 mb-10">{$_('data_collection_subtitle')}</p>
         <!-- <ul class="text-lg text-gray-600 space-y-2">
             <li class="flex items-start space-x-2">
@@ -47,7 +47,7 @@
         <img src="/images/data-management.png" alt="Data Management" class="w-full h-auto object-cover">
       </div>
       <div class="md:w-1/2 p-6">
-        <h2 class="text-3xl font-bold text-teal-600 mb-4">{$_('data_management_title')}</h2>
+        <h2 class="text-3xl font-bold text-primary-blue mb-4">{$_('data_management_title')}</h2>
         <p class="text-xl text-gray-600 mb-10">{$_('data_management_subtitle')}</p>
         <!-- <ul class="text-lg text-gray-600 space-y-2">
             <li class="flex items
@@ -74,7 +74,7 @@
     <!-- Section 3: Data Analysis -->
     <section class="px-16 py-8 w-full max-w-7xl flex flex-col md:flex-row items-center justify-between">
       <div class="md:w-1/2 p-6">
-        <h2 class="text-3xl font-bold text-teal-600 mb-4">{$_('data_analysis_title')}</h2>
+        <h2 class="text-3xl font-bold text-primary-blue mb-4">{$_('data_analysis_title')}</h2>
         <p class="text-xl text-gray-600 mb-10">{$_('data_analysis_subtitle')}</p>
         <!-- <ul class="text-lg text-gray-600 space-y-2">
             <li class="flex items 
