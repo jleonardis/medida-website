@@ -14,12 +14,18 @@
     "platform_title": "Our platform",
     "platform_subtitle": "Medida makes data collection, organization, and analysis easy for you and your team.",
     "data_collection_title": "Collect your data",
-    "data_collection_subtitle": "Everyone in your organization will be able to access Medida’s singular database from wherever they have internet access, ensuring consistency and accuracy.",
+    "data_collection_subtitle": "Everyone in your organization will be able to access Medida’s singular database from wherever they have internet access and collect data even without internet access, ensuring consistency and accuracy.",
     "data_collection_list_item_1": "Track your interactions with your participants with Medida’s education, visits, and small-businesses modules.",
     "data_collection_list_item_2": "Store your participants’ demographic data and familial relations with Medida’s participants & households module.",
     "data_collection_list_item_3": "Gather impact data over the long term using Medida’s highly customizable metrics and surveys modules.",
     "data_management_title": "Organize your data",
     "data_management_subtitle": "Medida automatically synchronizes all the data you collect, connecting your surveys to your participants, and your participants to their interactions, so everything stays clean and organized without any configuration necessary. Any data you or your team need will be easily accessible from any device with an internet connection.",
     "data_analysis_title": "Analyze your data",
-    "data_analysis_subtitle": "Create reports that combine your operations data with your metric data to easily calculate key indicators and measure your impact. Your reports will update in real-time to reflect every new data point you collect, so up-to-date insights are always just a click away."
+    "data_analysis_subtitle": "Create reports that combine your operations data with your metric data to easily calculate key indicators and measure your impact. Your reports will update in real-time to reflect every new data point you collect, so up-to-date insights are always just a click away.",
+    "training_title": "Training and support",
+    "training_subtitle": "We know that learning new tools can be scary and organizational change even scarier. We're with you every step of the way.",
+    "comprehensive_training_title": "Comprehensive training",
+    "comprehensive_training_subtitle": "You'll receive hands-on training right off the bat for you and for every level of your team, ensuring everyone feels comfortable and confident using Medida on a daily basis.",
+    "long_term_support_title": "Long-term support",
+    "long_term_support_subtitle": "We know that this is going to be a marathon and not a sprint which is why we offer long-term support to guide your staff as they implement the skills they’ve learned in our training program. We also offer periodic refresher trainings and deep-dive trainings as you progress in your data journey."
 }

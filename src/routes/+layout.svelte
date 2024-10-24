@@ -2,6 +2,7 @@
 	import '../app.css';
 	import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 	import { faWhatsapp } from '@fortawesome/free-brands-svg-icons';
+	import { faFacebook, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 	import { FontAwesomeIcon } from '@fortawesome/svelte-fontawesome';
 	// src/lib/i18n/index.ts
 	import { browser } from '$app/environment'
@@ -52,3 +53,15 @@
   </nav>
 
   {@render children()}
+
+  <!-- Footer -->
+  <footer class="bg-primary-blue text-white text-center py-8">
+	<div class="flex justify-center space-x-4">
+		<a href="mailto:contact@medida.io" class="text-2xl"><FontAwesomeIcon icon={faEnvelope} /></a>
+		<a href="https://wa.me/1234567890" class="text-2xl"><FontAwesomeIcon icon={faWhatsapp} /></a>
+		<a href="https://www.facebook.com" class="text-2xl"><FontAwesomeIcon icon={faFacebook} /></a>
+		<a href="https://www.linkedin.com" class="text-2xl"><FontAwesomeIcon icon={faLinkedin} /></a>
+	</div>
+	<p class="text-xs mt-4">contact@medida.io</p>
+	<p class="text-xs my-2"> +502 3215 3645</p>
+  </footer>
