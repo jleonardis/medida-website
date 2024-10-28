@@ -37,22 +37,22 @@
   </section>
 
   <!-- Services Section -->
-  <section class="py-16 text-center">
-    <h1 class="text-4xl font-semibold text-primary-blue md:text-5xl">{$_('services_section_title')}</h1>
+  <section class="py-12 md:py-16 text-center">
+    <h1 class="md:text-4xl font-semibold text-primary-blue md:text-5xl">{$_('services_section_title')}</h1>
     <div class="flex flex-wrap justify-center mt-16 space-y-8 md:space-y-0 md:space-x-8">
       <div class="w-full px-4 md:w-1/3">
-        <h3 class="text-3xl font-bold text-primary-blue">{$_('me_consulting_title')}</h3>
-        <p class="mt-4 text-2xl text-primary-orange">{$_('me_consulting_description')}</p>
+        <h3 class="md:md:text-3xl font-bold text-primary-blue">{$_('me_consulting_title')}</h3>
+        <p class="mt-4 md:text-2xl text-primary-orange">{$_('me_consulting_description')}</p>
       </div>
       <div class="w-full px-4 md:w-1/3">
-        <h3 class="text-3xl font-bold text-primary-blue"><a href="/platform">{$_('database_platform_title')}</a></h3>
-        <p class="mt-4 text-2xl text-primary-orange">{$_('database_platform_description')}</p>
+        <h3 class="md:text-3xl font-bold text-primary-blue"><a href="/platform">{$_('database_platform_title')}</a></h3>
+        <p class="mt-4 md:text-2xl text-primary-orange">{$_('database_platform_description')}</p>
       </div>
     </div>
   </section>
 
   <!-- Demo video -->
-   <section class="py-16 my-16 w-full px-8">
+   <section class="py-16 md:my-16 w-full px-8">
     <video id="demo-video" class="md:w-1/2 mx-auto" controls muted>
       <source src={`/videos/demo-video-${$locale === 'en' ? 'english' : 'spanish'}.mp4`} type="video/mp4">
       Your browser does not support the video tag.
@@ -60,8 +60,8 @@
    </section>
 
    <!-- CTA book a meeting-->
-    <section class="my-16 py-16 text-center">
-      <p class="text-center text-2xl mb-10">{$_('cta_title')}</p>
-      <a href="{scheduleLink}" class="px-8 py-4 bg-primary-blue text-white rounded-lg hover:bg-primary-orange">{$_('cta_button_text')}</a>
+    <section class="my-8 md:my-16 md:py-16 text-center">
+      <p class="text-center md:text-2xl mb-10">{$_('cta_title')}</p>
+      <a href="{scheduleLink}" class="md:px-8 py-4 bg-primary-blue text-white text-xs md:text-base rounded-lg hover:bg-primary-orange">{$_('cta_button_text')}</a>
     </section>
 </main>

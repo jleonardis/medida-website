@@ -42,17 +42,17 @@
 			{/if}
 		</div>
 		<div class="flex items-center space-x-4 my-4">
-			<ul class="flex space-x-8 text-xl mx-2 text-gray-700">
+			<ul class="flex space-x-8 md:text-xl mx-2 text-gray-700">
 				<li><a href="/how-we-work" class="hover:text-primary-blue">{$_('how_we_work')}</a></li>
 				<li><a href="/vision" class="hover:text-primary-blue mr-10">{$_('our_vision')}</a></li>
 			<li>
 				<a href="{emailLink}">
-					<FontAwesomeIcon icon={faEnvelope} class="text-2xl text-gray-700" />
+					<FontAwesomeIcon icon={faEnvelope} class="md:text-2xl text-gray-700" />
 				</a>
 			</li>
 			<li>
 				<a href="{whatsappLink}" class="mr-10">
-					<FontAwesomeIcon icon={faWhatsapp} class="text-2xl text-green-500" />
+					<FontAwesomeIcon icon={faWhatsapp} class="md:text-2xl text-green-500" />
 				</a>
 			</li>
 			</ul>
