@@ -52,8 +52,8 @@
   </section>
 
   <!-- Demo video -->
-   <section class="py-16 my-16">
-    <video id="demo-video" class="w-1/2 mx-auto" controls muted>
+   <section class="py-16 my-16 w-full px-8">
+    <video id="demo-video" class="md:w-1/2 mx-auto" controls muted>
       <source src={`/videos/demo-video-${$locale === 'en' ? 'english' : 'spanish'}.mp4`} type="video/mp4">
       Your browser does not support the video tag.
     </video>

@@ -5,16 +5,16 @@
   </script>
   
   <div class="flex flex-col items-center p-8">
-    <section class="w-full h-screen">
+    <section class="w-full h-screen py-8">
         <h1 class="text-4xl font-bold text-primary-blue text-center mb-8">{$_('platform_title')}</h1>
         <p class="text-xl text-gray-600 text-center mb-8">{$_('platform_subtitle')}</p>
         <div class="w-full">
-            <img src="/images/platform-full.png" alt="Platform Image" class="w-1/2 mx-auto h-auto object-cover">
+            <img src="/images/platform-full.png" alt="Platform Image" class="md:w-1/2 mx-auto h-auto object-cover">
         </div>
     </section>
     <!-- Section 1: Data Collection -->
-    <section class="px-16 py-8 w-full max-w-7xl flex flex-col md:flex-row items-center justify-between">
-      <div class="md:w-1/2 p-6">
+    <section class="md:px-16 py-8 w-full max-w-7xl flex flex-col md:flex-row items-center justify-between">
+      <div class="md:w-1/2 p-6 order-2 md:order-1">
         <h2 class="text-3xl font-bold text-primary-blue mb-4">{$_('data_collection_title')}</h2>
         <p class="text-xl text-gray-600 mb-10">{$_('data_collection_subtitle')}</p>
         <!-- <ul class="text-lg text-gray-600 space-y-2">
@@ -42,7 +42,7 @@
     </section>
   
     <!-- Section 2: Data Management -->
-    <section class="px-16 py-8 w-full max-w-7xl flex flex-col md:flex-row items-center justify-between">
+    <section class="md:px-16 py-8 w-full max-w-7xl flex flex-col md:flex-row items-center justify-between">
       <div class="md:w-1/2 p-6">
         <img src="/images/data-management.png" alt="Data Management" class="w-full h-auto object-cover">
       </div>
@@ -72,8 +72,8 @@
     </section>
 
     <!-- Section 3: Data Analysis -->
-    <section class="px-16 py-8 w-full max-w-7xl flex flex-col md:flex-row items-center justify-between">
-      <div class="md:w-1/2 p-6">
+    <section class="md:px-16 py-8 w-full max-w-7xl flex flex-col md:flex-row items-center justify-between">
+      <div class="md:w-1/2 p-6 order-2 md:order-1">
         <h2 class="text-3xl font-bold text-primary-blue mb-4">{$_('data_analysis_title')}</h2>
         <p class="text-xl text-gray-600 mb-10">{$_('data_analysis_subtitle')}</p>
         <!-- <ul class="text-lg text-gray-600 space-y-2">
