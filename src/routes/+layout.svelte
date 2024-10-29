@@ -30,7 +30,10 @@
 	const whatsappNumber = '+502 5218 8826';
 
 	let isOpen = $state(false);
-	$inspect(isOpen);
+	
+	const closeMenu = () => {
+		isOpen = false;
+	};
 </script>
 
 <!-- Navbar -->
@@ -46,7 +49,7 @@
 	<!-- Hamburger Button -->
 	<button
 		class="flex flex-col items-center justify-center w-8 h-8 space-y-1 md:hidden"
-		onclick={() => (isOpen = !isOpen)}
+		onclick={() => (isOpen = true)}
 		>
 		<div class="w-8 h-1 bg-gray-800 transition-transform duration-300" class:hamburger-top-line={isOpen}></div>
 		<div class="w-8 h-1 bg-gray-800 transition-opacity duration-300" class:hamburger-middle-line={isOpen}></div>
@@ -57,18 +60,14 @@
 	<div class="fixed inset-0 z-40 flex flex-col items-center justify-center bg-white md:hidden" class:hidden={!isOpen}>
 		<div class="absolute top-0 right-0 p-4">
 			<button
-				onclick={() => (isOpen = false)}
+				onclick={closeMenu}
 				class="text-2xl"
 				>
 				&times;
 			</button>
 		</div>
-		<a href="/how-we-work" onclick={() => {
-			isOpen = false;
-		}} class="text-2xl my-4">{$_('how_we_work')}</a>
-		<a href="/vision" onclick={() => {
-			isOpen = false;
-		}} class="text-2xl my-4">{$_('our_vision')}</a>
+		<a href="/how-we-work" onclick={closeMenu} class="text-2xl my-4">{$_('how_we_work')}</a>
+		<a href="/vision" onclick={closeMenu} class="text-2xl my-4">{$_('our_vision')}</a>
 		<div class="space-x-8 my-4">
 			<a href="{emailLink}" class="text-2xl my-4"><FontAwesomeIcon icon={faEnvelope} class="md:text-2xl text-gray-700" /></a>
 			<a href="{whatsappLink}" class="text-2xl my-4"><FontAwesomeIcon icon={faWhatsapp} class="text-green-500"/></a>

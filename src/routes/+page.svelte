@@ -62,6 +62,6 @@
    <!-- CTA book a meeting-->
     <section class="my-8 md:my-16 md:py-16 text-center">
       <p class="text-center md:text-2xl mb-10">{$_('cta_title')}</p>
-      <a href="{scheduleLink}" class="md:px-8 py-4 bg-primary-blue text-white text-xs md:text-base rounded-lg hover:bg-primary-orange">{$_('cta_button_text')}</a>
+      <a href="{scheduleLink}" class="px-8 py-4 bg-primary-blue text-white text-xs md:text-base rounded-lg hover:bg-primary-orange">{$_('cta_button_text')}</a>
     </section>
 </main>
