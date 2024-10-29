@@ -8,8 +8,8 @@
     <p class="text-xl text-gray-600 text-center mb-8">{$_('training_subtitle')}</p>
     
     <!-- Section 1: Comprehensive training -->
-    <section class="px-16 py-8 w-full max-w-7xl flex flex-col md:flex-row items-center justify-between">
-      <div class="md:w-1/2 p-6">
+    <section class="md:px-16 py-8 w-full max-w-7xl flex flex-col md:flex-row items-center justify-between">
+      <div class="md:w-1/2 order-2 md: order-1 p-6">
         <h2 class="text-3xl font-bold text-primary-blue mb-4">{$_('comprehensive_training_title')}</h2>
         <p class="text-xl text-gray-600 mb-10">{$_('comprehensive_training_subtitle')}</p>
       </div>
@@ -19,7 +19,7 @@
     </section>
   
     <!-- Section 2: Long-term support -->
-    <section class="px-16 py-8 w-full max-w-7xl flex flex-col md:flex-row items-center justify-between">
+    <section class="md:px-16 py-8 w-full max-w-7xl flex flex-col md:flex-row items-center justify-between">
       <div class="md:w-1/2 p-6">
         <img src="/images/long-term-support.jpg" alt="Data Management" class="w-full h-auto object-cover">
       </div>

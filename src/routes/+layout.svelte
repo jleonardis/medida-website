@@ -28,17 +28,59 @@
 
 	const contactEmail = 'contact@medida.io';
 	const whatsappNumber = '+502 5218 8826';
+
+	let isOpen = $state(false);
+	$inspect(isOpen);
 </script>
 
 <!-- Navbar -->
-<nav class="flex items-center justify-between px-10 py-4">
+<nav class="flex flex-row items-center justify-between p-4 md:px-10 md:py-4">
+	<div class="absolute block md:hidden top-0 right-0">
+		{#if $locale === 'es'}
+			<span onclick={() => changeLanguage('en')} class="text-gray-700 hover:text-primary-blue text-xs cursor-pointer">English</span>
+		{:else}
+			<span onclick={() => changeLanguage('es')} class="text-gray-700 hover:text-primary-blue text-xs cursor-pointer">Español</span>
+		{/if}
+	</div>
 	<div><a href="/"><img class="h-14 mt-2" src="/images/logo.png" /></a></div>
-	<div class="flex flex-col">
+	<!-- Hamburger Button -->
+	<button
+		class="flex flex-col items-center justify-center w-8 h-8 space-y-1 md:hidden"
+		onclick={() => (isOpen = !isOpen)}
+		>
+		<div class="w-8 h-1 bg-gray-800 transition-transform duration-300" class:hamburger-top-line={isOpen}></div>
+		<div class="w-8 h-1 bg-gray-800 transition-opacity duration-300" class:hamburger-middle-line={isOpen}></div>
+		<div class="w-8 h-1 bg-gray-800 transition-transform duration-300" class:hamburger-bottom-line={isOpen}></div>
+	</button>
+
+	<!-- Mobile Menu -->
+	<div class="fixed inset-0 z-40 flex flex-col items-center justify-center bg-white md:hidden" class:hidden={!isOpen}>
+		<div class="absolute top-0 right-0 p-4">
+			<button
+				onclick={() => (isOpen = false)}
+				class="text-2xl"
+				>
+				&times;
+			</button>
+		</div>
+		<a href="/how-we-work" onclick={() => {
+			isOpen = false;
+		}} class="text-2xl my-4">{$_('how_we_work')}</a>
+		<a href="/vision" onclick={() => {
+			isOpen = false;
+		}} class="text-2xl my-4">{$_('our_vision')}</a>
+		<div class="space-x-8 my-4">
+			<a href="{emailLink}" class="text-2xl my-4"><FontAwesomeIcon icon={faEnvelope} class="md:text-2xl text-gray-700" /></a>
+			<a href="{whatsappLink}" class="text-2xl my-4"><FontAwesomeIcon icon={faWhatsapp} class="text-green-500"/></a>
+		</div>
+		<a href="{scheduleLink}" class="px-6 py-2 my-4 bg-primary-blue text-white rounded-lg hover:bg-primary-orange">{$_('book_consultation')}</a>
+	</div>
+	<div class="md:flex flex-col hidden">
 		<div class="flex text-right ml-auto mb-1 items-center space-x-2">
 			{#if $locale === 'es'}
-				<span on:click={() => changeLanguage('en')} class="text-gray-700 hover:text-primary-blue text-xs cursor-pointer">English</span>
+				<span onclick={() => changeLanguage('en')} class="text-gray-700 hover:text-primary-blue text-xs cursor-pointer">English</span>
 			{:else}
-				<span on:click={() => changeLanguage('es')} class="text-gray-700 hover:text-primary-blue text-xs cursor-pointer">Español</span>
+				<span onclick={() => changeLanguage('es')} class="text-gray-700 hover:text-primary-blue text-xs cursor-pointer">Español</span>
 			{/if}
 		</div>
 		<div class="flex items-center space-x-4 my-4">
@@ -74,3 +116,15 @@
 	<p class="text-xs mt-4">{contactEmail}</p>
 	<p class="text-xs my-2">{whatsappNumber}</p>
   </footer>
+
+  <style>
+	hamburger-top-line {
+		transform: rotate(-45deg) translateY(1.5px);
+	}
+	hamburger-middle-line {
+		opacity: 0;
+	}
+	hamburger-bottom-line {
+		transform: rotate(45deg) translateY(-1.5px);
+	}
+  </style>
