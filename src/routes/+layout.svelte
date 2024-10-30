@@ -38,17 +38,17 @@
 
 <!-- Navbar -->
 <nav class="flex flex-row items-center justify-between p-4 md:px-10 md:py-4">
-	<div class="absolute block md:hidden top-0 right-0">
+	<div class="absolute block md:hidden top-0 right-2">
 		{#if $locale === 'es'}
 			<span onclick={() => changeLanguage('en')} class="text-gray-700 hover:text-primary-blue text-xs cursor-pointer">English</span>
 		{:else}
 			<span onclick={() => changeLanguage('es')} class="text-gray-700 hover:text-primary-blue text-xs cursor-pointer">Español</span>
 		{/if}
 	</div>
-	<div><a href="/"><img class="h-14 mt-2" src="/images/logo.png" /></a></div>
+	<div><a href="/"><img class="h-14 mt-4" src="/images/logo.png" /></a></div>
 	<!-- Hamburger Button -->
 	<button
-		class="flex flex-col items-center justify-center w-8 h-8 space-y-1 md:hidden"
+		class="mt-6 flex flex-col items-center justify-center w-8 h-8 space-y-1 md:hidden"
 		onclick={() => (isOpen = true)}
 		>
 		<div class="w-8 h-1 bg-gray-800 transition-transform duration-300" class:hamburger-top-line={isOpen}></div>
