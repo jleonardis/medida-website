@@ -55,7 +55,7 @@
 
 {#if !loading}
 	<!-- Navbar -->
-	<nav class="flex flex-row items-center justify-between p-4 md:px-10 md:py-4">
+	<nav class="flex flex-row items-center justify-between p-2 md:px-10 md:py-4">
 		<div class="absolute block md:hidden top-0 right-2">
 			{#if $locale === 'es'}
 				<span onclick={() => changeLanguage('en')} class="text-gray-700 hover:text-primary-blue text-xs cursor-pointer">English</span>
@@ -84,6 +84,7 @@
 					&times;
 				</button>
 			</div>
+			<a href="/" onclick={closeMenu} class="text-2xl my-4">{$_('home')}</a>
 			<a href="/how-we-work" onclick={closeMenu} class="text-2xl my-4">{$_('how_we_work')}</a>
 			<a href="/vision" onclick={closeMenu} class="text-2xl my-4">{$_('our_vision')}</a>
 			<div class="space-x-8 my-4">
@@ -123,14 +124,14 @@
 	{@render children()}
 
 	<!-- Footer -->
-	<footer class="bg-primary-blue text-white text-center py-8">
+	<footer class="bg-primary-blue text-white text-center pt-3 pb-1 md:py-8">
 		<div class="flex justify-center space-x-4">
 			<a href="{emailLinkWithSubject}" class="text-2xl"><FontAwesomeIcon icon={faEnvelope} /></a>
 			<a href="{whatsappLinkWithText}" class="text-2xl"><FontAwesomeIcon icon={faWhatsapp} /></a>
 			<a href="{facebookLink}" class="text-2xl"><FontAwesomeIcon icon={faFacebook} /></a>
 			<a href="{linkedinLink}" class="text-2xl"><FontAwesomeIcon icon={faLinkedin} /></a>
 		</div>
-		<p class="text-xs mt-4">{contactEmail}</p>
+		<p class="text-xs mt-2 md:mt-4">{contactEmail}</p>
 		<p class="text-xs my-2">{whatsappNumber}</p>
 	</footer>
 {/if}

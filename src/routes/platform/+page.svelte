@@ -14,29 +14,11 @@
     </section>
     <!-- Section 1: Data Collection -->
     <section class="md:px-16 py-8 w-full max-w-7xl flex flex-col md:flex-row items-center justify-between">
-      <div class="md:w-1/2 p-6 order-2 md:order-1">
+      <div class="md:w-1/2 p-6 md:order-1 order-2">
         <h2 class="text-3xl font-bold text-primary-blue mb-4">{$_('data_collection_title')}</h2>
         <p class="text-xl text-gray-600 mb-10">{$_('data_collection_subtitle')}</p>
-        <!-- <ul class="text-lg text-gray-600 space-y-2">
-            <li class="flex items-start space-x-2">
-                <span>•</span>
-                <span>Every organization should be able to take control of their data with confidence.</span>
-            </li>
-            <li class="flex items-start space-x-2">
-                <span>•</span>
-                <span>Good data management shouldn’t take time, it should save time.</span>
-            </li>
-            <li class="flex items-start space-x-2">
-                <span>•</span>
-                <span>Your organization is at its best when your staff are focused on how to improve your programs and increase their impact.</span>
-            </li>
-            <li class="flex items-start space-x-2">
-                <span>•</span>
-                <span>You should be able to demonstrate that impact to donors and stakeholders with real-time, one-click reports.</span>
-            </li>
-        </ul> -->
       </div>
-      <div class="md:w-1/2 p-6">
+      <div class="md:w-1/2 p-6 order-1 md:order-2">
         <img src="/images/data-collection.png" alt="Data Collection" class="w-full h-auto object-cover">
       </div>
     </section>
@@ -96,7 +78,7 @@
             </li>
         </ul> -->
         </div>
-        <div class="md:w-1/2 p-6">
+        <div class="md:w-1/2 p-6 order-1 md:order-2">
             <img src="/images/data-analysis.png" alt="Data Analysis" class="w-full h-auto object-cover">
             </div>
         </section>

@@ -9,11 +9,11 @@
     
     <!-- Section 1: Comprehensive training -->
     <section class="md:px-16 py-8 w-full max-w-7xl flex flex-col md:flex-row items-center justify-between">
-      <div class="md:w-1/2 order-2 md: order-1 p-6">
+      <div class="md:w-1/2 order-2 md:order-1 p-6">
         <h2 class="text-3xl font-bold text-primary-blue mb-4">{$_('comprehensive_training_title')}</h2>
         <p class="text-xl text-gray-600 mb-10">{$_('comprehensive_training_subtitle')}</p>
       </div>
-      <div class="md:w-1/2 p-6">
+      <div class="md:w-1/2 p-6 order-1 md:order-2">
         <img src="/images/comprehensive-training.jpg" alt="Comprehensive Training" class="w-full h-auto object-cover">
       </div>
     </section>
