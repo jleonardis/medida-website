@@ -53,7 +53,7 @@
 
   <!-- Demo video -->
    <section class="py-16 md:my-16 w-full px-8">
-    <video id="demo-video" class="md:w-1/2 mx-auto" controls muted>
+    <video id="demo-video" class="md:w-1/2 mx-auto" controls muted playsinline>
       <source src={`/videos/demo-video-${$locale === 'en' ? 'english' : 'spanish'}.mp4`} type="video/mp4">
       Your browser does not support the video tag.
     </video>
