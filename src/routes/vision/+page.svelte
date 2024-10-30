@@ -49,15 +49,15 @@
 </section>
 
 <section>
-    <div class="relative p-16">
-        <div class="absolute bg-opacity-50 bg-primary-orange inset-0"></div>
+    <div class="md:relative p-6 md:p-16 my-16">
+        <div class="md:absolute bg-opacity-50 bg-primary-orange inset-0"></div>
         <!-- Left Side: Image (Full width) -->
-        <div class="relative w-1/2 m-16">
+        <div class="hidden md:block md:relative md:w-1/2 m-16">
             <img src="/images/volcanoes.webp" alt="Scenic Image" class="object-cover">
         </div>
     
         <!-- Right Side: Text Box (Overlapping the Image) -->
-        <div class="absolute top-1/4 md:right-[25%] bg-gray-100 p-8 md:p-12 shadow-lg max-w-md">
+        <div class="md:absolute md:top-20 md:right-[25%] bg-gray-100 p-8 md:p-12 shadow-lg max-w-md">
             <h2 class="text-xl md:text-3xl font-bold text-primary-blue mb-4">{$_('we_believe_title')}</h2>
             <ul class="md:text-lg text-gray-600 space-y-2">
                 <li class="flex items-start space-x-2">
