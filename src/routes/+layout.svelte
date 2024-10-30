@@ -45,7 +45,7 @@
 			<span onclick={() => changeLanguage('es')} class="text-gray-700 hover:text-primary-blue text-xs cursor-pointer">Español</span>
 		{/if}
 	</div>
-	<div><a href="/"><img class="h-14 mt-4" src="/images/logo.png" /></a></div>
+	<div><a href="/"><img class="h-14 mt-4 md:mt-2" src="/images/logo.png" /></a></div>
 	<!-- Hamburger Button -->
 	<button
 		class="mt-6 flex flex-col items-center justify-center w-8 h-8 space-y-1 md:hidden"
