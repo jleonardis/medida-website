@@ -8,7 +8,8 @@
 	import { browser } from '$app/environment';
 	import { init, register, locale, _, waitLocale } from 'svelte-i18n';
 	import { scheduleLink, whatsappLink, facebookLink, emailLink, linkedinLink } from '$lib/links';
-    import { onMount } from 'svelte';
+    import { onMount, tick } from 'svelte';
+	import { get } from 'svelte/store';
 
 
 	const defaultLocale = 'es'
@@ -37,10 +38,19 @@
 	};
 
 	let loading = $state(true);
+	let whatsappLinkWithText = $state('');
+	let emailLinkWithSubject = $state('');
 	onMount(async () => {
 		await waitLocale();
+		await (new Promise(resolve => setTimeout(resolve, 0))); // wait for the next tick to let the translation strings properly update
+
 		loading = false;
+		
+		whatsappLinkWithText = whatsappLink + `?text=${encodeURIComponent(get(_)('whatsapp_text'))}`;
+		emailLinkWithSubject = emailLink + `?subject=${encodeURIComponent(get(_)('email_subject'))}`;
 	});
+
+	
 </script>
 
 {#if !loading}
@@ -77,8 +87,8 @@
 			<a href="/how-we-work" onclick={closeMenu} class="text-2xl my-4">{$_('how_we_work')}</a>
 			<a href="/vision" onclick={closeMenu} class="text-2xl my-4">{$_('our_vision')}</a>
 			<div class="space-x-8 my-4">
-				<a href="{emailLink}" class="text-2xl my-4"><FontAwesomeIcon icon={faEnvelope} class="md:text-2xl text-gray-700" /></a>
-				<a href="{whatsappLink}" class="text-2xl my-4"><FontAwesomeIcon icon={faWhatsapp} class="text-green-500"/></a>
+				<a href="{emailLinkWithSubject}" class="text-2xl my-4"><FontAwesomeIcon icon={faEnvelope} class="md:text-2xl text-gray-700" /></a>
+				<a href="{whatsappLinkWithText}" class="text-2xl my-4"><FontAwesomeIcon icon={faWhatsapp} class="text-green-500"/></a>
 			</div>
 			<a href="{scheduleLink}" class="px-6 py-2 my-4 bg-primary-blue text-white rounded-lg hover:bg-primary-orange">{$_('book_consultation')}</a>
 		</div>
@@ -95,12 +105,12 @@
 					<li><a href="/how-we-work" class="hover:text-primary-blue">{$_('how_we_work')}</a></li>
 					<li><a href="/vision" class="hover:text-primary-blue mr-10">{$_('our_vision')}</a></li>
 				<li>
-					<a href="{emailLink}">
+					<a href="{emailLinkWithSubject}">
 						<FontAwesomeIcon icon={faEnvelope} class="md:text-2xl text-gray-700" />
 					</a>
 				</li>
 				<li>
-					<a href="{whatsappLink}" class="mr-10">
+					<a href="{whatsappLinkWithText}" class="mr-10">
 						<FontAwesomeIcon icon={faWhatsapp} class="md:text-2xl text-green-500" />
 					</a>
 				</li>
@@ -115,8 +125,8 @@
 	<!-- Footer -->
 	<footer class="bg-primary-blue text-white text-center py-8">
 		<div class="flex justify-center space-x-4">
-			<a href="{emailLink}" class="text-2xl"><FontAwesomeIcon icon={faEnvelope} /></a>
-			<a href="{whatsappLink}" class="text-2xl"><FontAwesomeIcon icon={faWhatsapp} /></a>
+			<a href="{emailLinkWithSubject}" class="text-2xl"><FontAwesomeIcon icon={faEnvelope} /></a>
+			<a href="{whatsappLinkWithText}" class="text-2xl"><FontAwesomeIcon icon={faWhatsapp} /></a>
 			<a href="{facebookLink}" class="text-2xl"><FontAwesomeIcon icon={faFacebook} /></a>
 			<a href="{linkedinLink}" class="text-2xl"><FontAwesomeIcon icon={faLinkedin} /></a>
 		</div>
