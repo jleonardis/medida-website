@@ -63,7 +63,7 @@
 				<span onclick={() => changeLanguage('es')} class="text-gray-700 hover:text-primary-blue text-xs cursor-pointer">Español</span>
 			{/if}
 		</div>
-		<div><a href="/"><img class="h-14 mt-4 md:mt-2" src="/images/logo.png" /></a></div>
+		<div><a href="/"><img class="h-20 mt-4 md:mt-2" src="/images/logo.png" /></a></div>
 		<!-- Hamburger Button -->
 		<button
 			class="mt-6 flex flex-col items-center justify-center w-8 h-8 space-y-1 md:hidden"
@@ -101,20 +101,20 @@
 					<span onclick={() => changeLanguage('es')} class="text-gray-700 hover:text-primary-blue text-xs cursor-pointer">Español</span>
 				{/if}
 			</div>
-			<div class="flex items-center space-x-4 my-4">
-				<ul class="flex space-x-8 md:text-xl mx-2 text-gray-700">
+			<div class="flex items-center my-4 text-weight-900">
+				<ul class="flex space-x-8 md:text mx-2 text-primary-orange">
 					<li><a href="/how-we-work" class="hover:text-primary-blue">{$_('how_we_work')}</a></li>
-					<li><a href="/vision" class="hover:text-primary-blue mr-10">{$_('our_vision')}</a></li>
-				<li>
-					<a href="{emailLinkWithSubject}">
-						<FontAwesomeIcon icon={faEnvelope} class="md:text-2xl text-gray-700" />
-					</a>
-				</li>
-				<li>
-					<a href="{whatsappLinkWithText}" class="mr-10">
-						<FontAwesomeIcon icon={faWhatsapp} class="md:text-2xl text-green-500" />
-					</a>
-				</li>
+					<li><a href="/vision" class="hover:text-primary-blue">{$_('our_vision')}</a></li>
+					<li>
+						<a href="{emailLinkWithSubject}">
+							<FontAwesomeIcon icon={faEnvelope} class="md:text text-primary-orange" />
+						</a>
+					</li>
+					<li>
+						<a href="{whatsappLinkWithText}" class="mr-5">
+							<FontAwesomeIcon icon={faWhatsapp} class="md:text text-primary-orange" />
+						</a>
+					</li>
 				</ul>
 				<a href="{scheduleLink}" class="px-6 py-2 bg-primary-blue text-white rounded-lg hover:bg-primary-orange">{$_('book_consultation')}</a>
 			</div>
