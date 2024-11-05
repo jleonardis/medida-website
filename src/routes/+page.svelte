@@ -38,14 +38,14 @@
 
   <!-- Services Section -->
   <section class="py-12 md:py-16 text-center">
-    <h1 class="md:text-4xl font-semibold text-primary-blue md:text-5xl">{$_('services_section_title')}</h1>
+    <h1 class="md:text-4xl text-2xl font-semibold text-primary-blue md:text-5xl">{$_('services_section_title')}</h1>
     <div class="flex flex-wrap justify-center mt-16 space-y-8 md:space-y-0 md:space-x-8">
       <div class="w-full px-4 md:w-1/3">
-        <h3 class="md:md:text-3xl font-bold text-primary-blue">{$_('me_consulting_title')}</h3>
+        <h3 class="md:text-3xl text-xl font-bold text-primary-blue"><a href="/monitoring-and-evaluation">{$_('me_consulting_title')}</a></h3>
         <p class="mt-4 md:text-2xl text-primary-orange">{$_('me_consulting_description')}</p>
       </div>
       <div class="w-full px-4 md:w-1/3">
-        <h3 class="md:text-3xl font-bold text-primary-blue"><a href="/platform">{$_('database_platform_title')}</a></h3>
+        <h3 class="md:text-3xl text-xl font-bold text-primary-blue"><a href="/platform">{$_('database_platform_title')}</a></h3>
         <p class="mt-4 md:text-2xl text-primary-orange">{$_('database_platform_description')}</p>
       </div>
     </div>
