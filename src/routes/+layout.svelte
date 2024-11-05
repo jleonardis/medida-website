@@ -56,11 +56,11 @@
 {#if !loading}
 	<!-- Navbar -->
 	<nav class="flex flex-row items-center justify-between p-2 md:px-10 md:py-4">
-		<div class="absolute block md:hidden top-0 right-2">
+		<div class="absolute block md:hidden top-0 right-2 text-primary-orange">
 			{#if $locale === 'es'}
-				<span onclick={() => changeLanguage('en')} class="text-gray-700 hover:text-primary-blue text-xs cursor-pointer">English</span>
+				<span onclick={() => changeLanguage('en')} class="hover:text-primary-blue text-xs cursor-pointer">English</span>
 			{:else}
-				<span onclick={() => changeLanguage('es')} class="text-gray-700 hover:text-primary-blue text-xs cursor-pointer">Español</span>
+				<span onclick={() => changeLanguage('es')} class="hover:text-primary-blue text-xs cursor-pointer">Español</span>
 			{/if}
 		</div>
 		<div><a href="/"><img class="h-20 mt-4 md:mt-2" src="/images/logo.png" /></a></div>
@@ -94,11 +94,11 @@
 			<a href="{scheduleLink}" class="px-6 py-2 my-4 bg-primary-blue text-white rounded-lg hover:bg-primary-orange">{$_('book_consultation')}</a>
 		</div>
 		<div class="md:flex flex-col hidden">
-			<div class="flex text-right ml-auto mb-1 items-center space-x-2">
+			<div class="flex text-right ml-auto mb-1 items-center space-x-2 text-primary-orange">
 				{#if $locale === 'es'}
-					<span onclick={() => changeLanguage('en')} class="text-gray-700 hover:text-primary-blue text-xs cursor-pointer">English</span>
+					<span onclick={() => changeLanguage('en')} class="hover:text-primary-blue text-xs cursor-pointer">English</span>
 				{:else}
-					<span onclick={() => changeLanguage('es')} class="text-gray-700 hover:text-primary-blue text-xs cursor-pointer">Español</span>
+					<span onclick={() => changeLanguage('es')} class="hover:text-primary-blue text-xs cursor-pointer">Español</span>
 				{/if}
 			</div>
 			<div class="flex items-center my-4 text-weight-900">

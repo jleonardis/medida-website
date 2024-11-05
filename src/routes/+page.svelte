@@ -30,7 +30,7 @@
 <main class="bg-white font-sans">
   <!-- Hero Section -->
   <section class="relative bg-cover bg-center" style="background-image: url('/images/front-image.jpg');">
-    <div class="absolute inset-0 bg-opacity-40 bg-primary-orange"></div>
+    <div class="absolute inset-0 bg-opacity-60 bg-primary-orange"></div>
     <div class="relative z-10 flex flex-col items-center justify-center px-6 text-center text-white" style="height: 500px;">
       <h1 class="text-4xl font-bold md:text-6xl lg:text-7xl">{$_('hero_section_title')}</h1>
     </div>
