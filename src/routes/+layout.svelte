@@ -47,7 +47,7 @@
 		loading = false;
 		
 		whatsappLinkWithText = whatsappLink + `?text=${encodeURIComponent(get(_)('whatsapp_text'))}`;
-		emailLinkWithSubject = emailLink + `?subject=${encodeURIComponent(get(_)('email_subject'))}`;
+		emailLinkWithSubject = emailLink + `?subject=${encodeURIComponent(get(_)('email_subject'))}&body=${encodeURIComponent(get(_)('email_body'))}`;
 	});
 
 	
