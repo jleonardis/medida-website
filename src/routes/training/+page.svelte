@@ -1,5 +1,7 @@
 <script>
   import { _ } from "svelte-i18n";
+  import { scheduleLink } from "$lib/links";
+
 </script>
 
 <div class="flex flex-col items-center p-8">
@@ -71,10 +73,14 @@
     </div>
   </section>
 
-  <div class="my-10 w-full text-center">
+  <section class="my-2 md:py-16 text-center">
+    <a href="{scheduleLink}" class="px-2 md:px-8 py-4 bg-primary-blue text-white text-xs md:text-base rounded-lg hover:bg-primary-orange">{$_('cta_simple_button_text')}</a>
+  </section>
+
+  <div class="my-10 w-full text-center md:text-right md:pr-20">
     <a
       href="/monitoring-and-evaluation"
-      class="px-6 py-4 bg-primary-blue text-white rounded-lg hover:bg-primary-orange"
+      class="py-4 text-primary-blue rounded-lg hover:text-primary-orange"
       >{$_("consulting_title")}</a
     >
   </div>

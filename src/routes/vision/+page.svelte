@@ -1,5 +1,6 @@
 <script>
     import { _ } from 'svelte-i18n';
+    import { scheduleLink } from '$lib/links';
 </script>
 
 <section>
@@ -81,3 +82,7 @@
     </div>
     
 </section>
+
+<section class="my-16 md:py-16 text-center">
+    <a href="{scheduleLink}" class="px-2 md:px-8 py-4 bg-primary-blue text-white text-xs md:text-base rounded-lg hover:bg-primary-orange">{$_('cta_simple_button_text')}</a>
+  </section>

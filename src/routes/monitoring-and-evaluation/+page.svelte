@@ -1,5 +1,6 @@
 <script>
     import { _ } from 'svelte-i18n'; // Ensure svelte-i18n is properly set up
+    import { scheduleLink } from '$lib/links'; // Ensure the links file is properly set up
   </script>
   
   <main class="flex flex-col items-center w-full bg-white">
@@ -37,6 +38,18 @@
         <p class="text-xl text-gray-700">{$_('expected_results_text')}</p>
       </div>
     </section>
+
+    <section class="my-2 md:py-16 text-center">
+      <a href="{scheduleLink}" class="px-2 md:px-8 py-4 bg-primary-blue text-white text-xs md:text-base rounded-lg hover:bg-primary-orange">{$_('cta_simple_button_text')}</a>
+    </section>
+
+    <div class="my-10 w-full text-center md:text-right md:pr-20">
+      <a
+        href="/vision"
+        class="px-6 py-4 text-primary-blue rounded-lg hover:text-primary-orange"
+        >{$_("our_vision")}</a
+      >
+    </div>
   
   </main>
   

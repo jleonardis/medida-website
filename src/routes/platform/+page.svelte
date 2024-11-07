@@ -1,5 +1,6 @@
 <script>
   import { _ } from "svelte-i18n";
+  import { scheduleLink } from "$lib/links";
 
   // Assuming translations have been set up correctly
 </script>
@@ -118,10 +119,13 @@
       />
     </div>
   </section>
-  <div class="my-10 w-full text-center">
+  <section class="my-2 md:py-16 text-center">
+    <a href="{scheduleLink}" class="px-2 md:px-8 py-4 bg-primary-blue text-white text-xs md:text-base rounded-lg hover:bg-primary-orange">{$_('cta_simple_button_text')}</a>
+  </section>
+  <div class="my-10 w-full text-center md:text-right md:pr-20">
         <a
         href="/training"
-        class="px-6 py-4 bg-primary-blue text-white rounded-lg hover:bg-primary-orange"
+        class="px-6 py-4 text-primary-blue hover:text-primary-orange"
         >{$_("training_title")}</a
       >
   </div>
