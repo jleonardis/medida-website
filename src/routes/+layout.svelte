@@ -55,7 +55,7 @@
 
 {#if !loading}
 	<!-- Navbar -->
-	<nav class="flex flex-row items-center justify-between p-2 md:px-10 md:py-4">
+	<nav class="flex flex-row items-center justify-between p-4 md:px-10 md:py-4">
 		<div class="absolute block md:hidden top-0 right-2 text-primary-orange">
 			{#if $locale === 'es'}
 				<span onclick={() => changeLanguage('en')} class="hover:text-primary-blue text-xs cursor-pointer">English</span>

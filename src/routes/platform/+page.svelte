@@ -6,7 +6,7 @@
 </script>
 
 <div class="flex flex-col items-center p-8">
-  <section class="w-full h-screen py-8">
+  <section class="w-full md:h-screen py-8">
     <h1 class="text-4xl font-bold text-primary-blue text-center mb-8">
       {$_("platform_title")}
     </h1>
