@@ -13,9 +13,19 @@
         <img src="/images/monitoring-and-evaluation.png" alt={$_('consulting_image_alt')} class="w-2/3 md:w-1/2 object-contain" />
       </div>
     </section>
+
+     <!-- Second Section (Purpose and Expected Results) -->
+     <section class="w-full p-16 bg-gray-100">
+      <div class="container mx-auto">
+        <h2 class="text-3xl font-bold text-primary-blue mb-4">{$_('purpose_title')}</h2>
+        <p class="text-xl text-gray-700 mb-8">{$_('purpose_text')}</p>
+        <h2 class="text-3xl font-bold text-primary-blue mb-4">{$_('expected_results_title')}</h2>
+        <p class="text-xl text-gray-700">{$_('expected_results_text')}</p>
+      </div>
+    </section>
   
-    <!-- Second Section (Services Overview) -->
-    <section class="w-full bg-gray-100 py-16">
+    <!-- Third Section (Services Overview) -->
+    <section class="w-full py-16">
       <div class="container mx-auto w-3/4 text-left">
         <p class="text-2xl md:text-3xl font-bold text-primary-orange mb-8">
           {$_('services_offered_title')}
@@ -26,16 +36,6 @@
           <li><strong>{$_('practical_tasks_title')}:</strong> {$_('practical_tasks_description')}</li>
           <li><strong>{$_('collaboration_title')}:</strong> {$_('collaboration_description')}</li>
         </ul>
-      </div>
-    </section>
-  
-    <!-- Third Section (Purpose and Expected Results) -->
-    <section class="w-3/4 py-16 my-16">
-      <div class="container mx-auto">
-        <h2 class="text-3xl font-bold text-primary-blue mb-4">{$_('purpose_title')}</h2>
-        <p class="text-xl text-gray-700 mb-8">{$_('purpose_text')}</p>
-        <h2 class="text-3xl font-bold text-primary-blue mb-4">{$_('expected_results_title')}</h2>
-        <p class="text-xl text-gray-700">{$_('expected_results_text')}</p>
       </div>
     </section>
 
