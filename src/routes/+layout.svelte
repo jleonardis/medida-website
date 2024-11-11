@@ -105,6 +105,7 @@
 				<ul class="flex space-x-8 md:text mx-2 text-primary-orange">
 					<li><a href="/how-we-work" class="hover:text-primary-blue">{$_('how_we_work')}</a></li>
 					<li><a href="/vision" class="hover:text-primary-blue">{$_('our_vision')}</a></li>
+					<li><a href="/pricing" class="hover:text-primary-blue">{$_('pricing')}</a></li>
 					<li>
 						<a href="{emailLinkWithSubject}">
 							<FontAwesomeIcon icon={faEnvelope} class="md:text text-primary-orange" />
