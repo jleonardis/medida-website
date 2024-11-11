@@ -6,7 +6,7 @@
 </script>
 
 <section class="w-screen md:px-24 p-5">
-    <div class="mt-10 md:mt-24 md:mx-24 md:px-24 text-2xl leading-relaxed text-primary-blue text-center">
+    <div class="mt-10 md:mt-24 md:mx-24 md:px-24 text-xl md:text-2xl leading-relaxed text-primary-blue text-center">
         {$_('pricing_description')}
     </div>
 </section>
