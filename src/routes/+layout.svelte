@@ -87,7 +87,7 @@
 			<a href="/" onclick={closeMenu} class="text-2xl my-4">{$_('home')}</a>
 			<a href="/how-we-work" onclick={closeMenu} class="text-2xl my-4">{$_('how_we_work')}</a>
 			<a href="/vision" onclick={closeMenu} class="text-2xl my-4">{$_('our_vision')}</a>
-			<a href="/pricing" onclick={closeMenu} class="text-2xl my-4">{$_('pricing')}</a>
+			<!-- <a href="/pricing" onclick={closeMenu} class="text-2xl my-4">{$_('pricing')}</a> -->
 			<div class="space-x-8 my-4">
 				<a href="{emailLinkWithSubject}" class="text-2xl my-4"><FontAwesomeIcon icon={faEnvelope} class="md:text-2xl text-gray-700" /></a>
 				<a href="{whatsappLinkWithText}" class="text-2xl my-4"><FontAwesomeIcon icon={faWhatsapp} class="text-green-500"/></a>
@@ -106,7 +106,7 @@
 				<ul class="flex space-x-8 md:text mx-2 text-primary-orange">
 					<li><a href="/how-we-work" class="hover:text-primary-blue">{$_('how_we_work')}</a></li>
 					<li><a href="/vision" class="hover:text-primary-blue">{$_('our_vision')}</a></li>
-					<li><a href="/pricing" class="hover:text-primary-blue">{$_('pricing')}</a></li>
+					<!-- <li><a href="/pricing" class="hover:text-primary-blue">{$_('pricing')}</a></li> -->
 					<li>
 						<a href="{emailLinkWithSubject}">
 							<FontAwesomeIcon icon={faEnvelope} class="md:text text-primary-orange" />

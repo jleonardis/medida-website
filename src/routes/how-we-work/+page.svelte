@@ -8,7 +8,8 @@
       <div></div> <!-- Empty space for the large text -->
       <div class="text-left md:text-2xl text-primary-orange space-y-8">
           <p class="leading-relaxed">{@html $_('platform_description')}</p>
-          <p class="leading-relaxed">{@html $_('consultation_description')}</p>
+          <p class="leading-relaxed">{@html $_('pricing_description')}</p>
+          <p class="leading-relaxed pt-14">{@html $_('consultation_description')}</p>
       </div>
   </div>
 </section>
