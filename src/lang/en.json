@@ -64,5 +64,9 @@
   "whatsapp_text": "Let's chat about data management and impact measurement",
   "email_subject": "Let's chat about data management and impact measurement",
   "email_body": "Hi, I'd like to chat with you about data management and impact measurement.",
-  "pricing_description": "Our prices depend on the size of your organization and its specific needs and start at $USD2,000 per year."
+  "pricing_description": "Our prices depend on the size of your organization and its specific needs and start at $USD2,000 per year.",
+  "newsletter_section_title": "Sign up for occasional updates",
+  "newsletter_email_placeholder": "email",
+  "newsletter_submit_button": "Subscribe",
+  "newsletter_thank_you_message": "Welcome aboard"
 }

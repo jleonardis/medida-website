@@ -64,5 +64,9 @@
     "whatsapp_text": "Platicamos de la gestión de datos y la medición de impacto.",
     "email_subject": "Platicamos de la gestión de datos y la medición de impacto",
     "email_body": "Hola, me gustaría platicar contigo sobre la gestión de datos y la medición de impacto.",
-    "pricing_description": "Nuestros precios dependerán del tamaño de tu organización y de sus necesidades específicas e inician desde $USD2,000 al año."
+    "pricing_description": "Nuestros precios dependerán del tamaño de tu organización y de sus necesidades específicas e inician desde $USD2,000 al año.",
+    "newsletter_section_title": "Regístrate para recibir actualizaciones ocasionales",
+    "newsletter_email_placeholder": "Correo electrónico",
+    "newsletter_submit_button": "Suscribirse",
+    "newsletter_thank_you_message": "¡Bienvenido a bordo!"
 }

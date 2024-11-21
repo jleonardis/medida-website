@@ -25,6 +25,24 @@
       observer.observe(video);
     });
 
+
+    let showThankYouMessage = false;
+    function signupForNewsletter(event) {
+      event.preventDefault();
+      const email = event.target.querySelector('input').value;
+      fetch('/api/newsletter', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({ email })
+      });
+      showThankYouMessage = true;
+      window.setTimeout(() => {
+        showThankYouMessage = false;
+      }, 2000);
+    }
+
 </script>
 
 <main class="bg-white font-sans">
@@ -63,5 +81,20 @@
     <section class="my-8 md:my-16 md:py-16 text-center">
       <p class="text-center md:text-2xl mb-10">{$_('cta_title')}</p>
       <a href="{scheduleLink}" class="px-2 md:px-8 py-4 bg-primary-blue text-white text-xs md:text-base rounded-lg hover:bg-primary-orange">{$_('cta_button_text')}</a>
+    </section>
+
+    <!-- newsletter signup -->
+     <section class="py-10 bg-primary-blue text-white text-center">
+      <h4 class="md:text-4xl text-2xl font-semibold">{$_('newsletter_section_title')}</h4>
+      <div class="flex flex-col items-center justify-center mt-4" style="min-height: 150px;">
+        {#if showThankYouMessage}
+          <p class="mt-4 text-2xl">{$_('newsletter_thank_you_message')}</p>
+        {:else}
+          <form class="flex flex-col items-center justify-center w-full" on:submit={signupForNewsletter}>
+            <input type="email" class="w-full md:w-1/2 px-4 py-2 bg-white text-black rounded-lg" placeholder="{$_('newsletter_email_placeholder')}">
+            <button type="submit" class="px-4 py-2 bg-primary-orange text-white rounded-lg mt-4">{$_('newsletter_submit_button')}</button>
+          </form>
+        {/if}
+      </div>
     </section>
 </main>
