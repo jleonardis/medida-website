@@ -84,7 +84,7 @@
     </section>
 
     <!-- newsletter signup -->
-     <section class="py-10 bg-primary-blue text-white text-center">
+     <section class="py-10 px-2 bg-primary-blue text-white text-center">
       <h4 class="md:text-4xl text-2xl font-semibold">{$_('newsletter_section_title')}</h4>
       <div class="flex flex-col items-center justify-center mt-4" style="min-height: 150px;">
         {#if showThankYouMessage}
