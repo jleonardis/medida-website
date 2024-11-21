@@ -14,5 +14,13 @@ export async function addContact(email) {
         url: '/v3/marketing/contacts',
     };
     return sgClient.request(request);
+}
+
+export async function sendEmail(msg) {
+    try {
+        await sgMail.send(msg);
+        return { success: true };
+    } catch (error) {
+        return { success: false, error: error.message };
     }
-    
+}

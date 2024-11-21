@@ -84,15 +84,15 @@
     </section>
 
     <!-- newsletter signup -->
-     <section class="py-10 px-2 bg-primary-blue text-white text-center">
-      <h4 class="md:text-4xl text-2xl font-semibold">{$_('newsletter_section_title')}</h4>
-      <div class="flex flex-col items-center justify-center mt-4" style="min-height: 150px;">
+     <section class="py-8 px-2 bg-primary-orange text-white text-center">
+      <h4 class="md:text-2xl font-semibold">{$_('newsletter_section_title')}</h4>
+      <div class="flex flex-col items-center justify-center mt-4" style="min-height: 100px;">
         {#if showThankYouMessage}
           <p class="mt-4 text-2xl">{$_('newsletter_thank_you_message')}</p>
         {:else}
           <form class="flex flex-col items-center justify-center w-full" on:submit={signupForNewsletter}>
-            <input type="email" class="w-full md:w-1/2 px-4 py-2 bg-white text-black rounded-lg" placeholder="{$_('newsletter_email_placeholder')}">
-            <button type="submit" class="px-4 py-2 bg-primary-orange text-white rounded-lg mt-4">{$_('newsletter_submit_button')}</button>
+            <input type="email" class="w-full md:w-1/4 px-4 py-2 bg-white text-black rounded-lg" placeholder="{$_('newsletter_email_placeholder')}">
+            <button type="submit" class="px-4 py-2 bg-primary-blue text-white rounded-lg mt-4">{$_('newsletter_submit_button')}</button>
           </form>
         {/if}
       </div>
