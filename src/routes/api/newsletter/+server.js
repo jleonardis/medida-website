@@ -9,7 +9,7 @@ export async function POST({ request }) {
         await addContact(email);
         const msg = {
             to: 'jake@medida.io',
-            from: 'jake@medida.io',
+            from: 'contact@medida.io',
             subject: 'Medida website newsletter signup',
             html: `
             <p>
