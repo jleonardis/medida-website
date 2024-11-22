@@ -1,4 +1,4 @@
-import { addContact } from "$lib/mail";
+import { addContact, sendEmail } from "$lib/mail";
 import { json } from "@sveltejs/kit"
 
 export async function POST({ request }) {
@@ -20,6 +20,7 @@ export async function POST({ request }) {
           await sendEmail(msg);
         return json({ status: 200, body: { message: "Success" } });
     } catch (error) {
+        console.log('error', error);
         return json({ status: 500, body: { message: error.message } });
     }
 }
