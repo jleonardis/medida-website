@@ -42,7 +42,7 @@
 	let emailLinkWithSubject = $state('');
 	onMount(async () => {
 		await waitLocale();
-		await (new Promise(resolve => setTimeout(resolve, 0))); // wait for the next tick to let the translation strings properly update
+		await (new Promise(resolve => setTimeout(resolve, 100))); // wait for the next tick to let the translation strings properly update
 
 		loading = false;
 		
